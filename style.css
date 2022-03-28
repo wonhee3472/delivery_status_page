@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background: url("https://assets.codepen.io/6060109/ZigZag.png");
+  background-size: cover;
+}
+
+.white-block {
+  min-width: 300px;
+  width: 80%;
+  height: 567px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 70px auto;
+  box-shadow: 0px 40px 40px -20px #3c7b61;
+  position: relative;
+}
+
+#close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.inner-container {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 55px 20px 40px 20px;
+}
+
+.inner-container > h1 {
+  margin: 20px 0 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #2f463d;
+}
+
+.inner-container > p {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  line-height: 26px;
+  color: #828282;
+}
+
+.menu-preview {
+  margin: 20px 0;
+  height: 66px;
+  background-color: #f0fff5;
+  border-radius: 5px;
+  display: flex;
+}
+
+.menu-name-price {
+  text-align: left;
+  font-family: "Montserrat";
+}
+
+.menu-name-price > h5 {
+  margin: 15px 15px 0px 20px;
+  color: 2F463D;
+  font-weight: 600;
+  color: #2f463d;
+}
+
+.menu-name-price > p {
+  font-size: 15px;
+  color: #7a8f85;
+  margin: 0 0 10px 20px;
+}
+
+.menu-preview > .change {
+  margin-left: 20px;
+  margin-top: 25px;
+  color: #467a66;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.click-button {
+  margin-top: 5px;
+  font-family: Montserrat;
+  background-color: #46a67e;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.click-button:hover {
+  cursor: pointer;
+  background-color: #46c67c;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot,
+.dot-center {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border: 0;
+  border-radius: 25px;
+}
+
+.dot {
+  background-color: #e0e0e0;
+}
+
+.dot-center {
+  background-color: #67bd99;
+}
