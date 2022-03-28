@@ -84,9 +84,8 @@ body {
   margin: 0 0 10px 20px;
 }
 
-.menu-preview > .change {
-  margin-left: 20px;
-  margin-top: 25px;
+.change {
+  margin-left: 5px;
   color: #467a66;
   font-family: Montserrat;
   font-size: 13px;
@@ -96,6 +95,13 @@ body {
   letter-spacing: 0px;
   text-align: left;
   text-decoration-line: underline;
+  background-color: #f0fff5;
+  border: 0;
+}
+
+.change:hover {
+  cursor: pointer;
+  color: #46c67c;
 }
 
 .click-button {
@@ -115,24 +121,25 @@ body {
   background-color: #46c67c;
 }
 
-.dots-container {
+nav {
+  width: 100%;
+}
+
+.nav > .nav-list {
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
 
-.dot,
-.dot-center {
+.nav-list-item,
+.nav-list-item-center {
+  background-color: #f2f2f2;
   width: 10px;
   height: 10px;
+  border-radius: 5px;
   margin: 0 10px;
-  border: 0;
-  border-radius: 25px;
 }
 
-.dot {
-  background-color: #e0e0e0;
-}
-
-.dot-center {
+.nav-list-item-center {
   background-color: #67bd99;
 }
