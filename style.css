@@ -16,11 +16,13 @@ html {
 body {
   background: url("https://assets.codepen.io/6060109/ZigZag.png");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .white-block {
-  min-width: 300px;
-  width: 80%;
+  width: 350px;
   height: 567px;
   background-color: white;
   border-radius: 5px;
@@ -39,7 +41,12 @@ body {
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 55px 20px 40px 20px;
+  padding: 55px 45px;
+}
+
+.inner-container > img {
+  width: 110px;
+  height: 110px;
 }
 
 .inner-container > h1 {
@@ -64,39 +71,40 @@ body {
   background-color: #f0fff5;
   border-radius: 5px;
   display: flex;
-}
-
-.menu-name-price {
-  text-align: left;
+  align-items: center;
   font-family: "Montserrat";
 }
 
+.menu-name-price {
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
 .menu-name-price > h5 {
-  margin: 15px 15px 0px 20px;
+  margin-bottom: 3px;
   color: 2F463D;
-  font-weight: 600;
+  font-weight: 800;
   color: #2f463d;
 }
 
 .menu-name-price > p {
   font-size: 15px;
   color: #7a8f85;
-  margin: 0 0 10px 20px;
+  margin: 0 0 10px 0;
 }
 
-.change {
-  margin-left: 5px;
+.menu-preview button {
+  width: 25%;
   color: #467a66;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-style: normal;
+  font-size: 15px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0px;
-  text-align: left;
   text-decoration-line: underline;
   background-color: #f0fff5;
   border: 0;
+  padding-right: 15px;
 }
 
 .change:hover {
@@ -105,19 +113,32 @@ body {
 }
 
 .click-button {
-  margin-top: 5px;
   font-family: Montserrat;
-  background-color: #46a67e;
-  color: white;
   border: 0;
   border-radius: 5px;
   width: 100%;
   height: 50px;
+  color: white;
+}
+
+.click-button.first,
+.click-button.third {
+  margin-top: 80px;
+  background-color: #bdbdbd;
+  box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
+}
+
+.click-button.second {
+  margin-top: 5px;
+  background-color: #46a67e;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+  transition: 0.3s ease all;
 }
 
 .click-button:hover {
   cursor: pointer;
+  transition: 0.3s ease all;
   background-color: #46c67c;
 }
 
@@ -131,8 +152,7 @@ nav {
   list-style-type: none;
 }
 
-.nav-list-item,
-.nav-list-item-center {
+.nav-list-item {
   background-color: #f2f2f2;
   width: 10px;
   height: 10px;
@@ -140,6 +160,18 @@ nav {
   margin: 0 10px;
 }
 
-.nav-list-item-center {
+.nav-list-item.second {
   background-color: #67bd99;
+}
+
+.first,
+.third {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .first,
+  .third {
+    display: block;
+  }
 }
